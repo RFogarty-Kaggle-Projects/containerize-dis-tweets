@@ -1,0 +1,22 @@
+<!DOCTYPE HTML5>
+<html>
+	<head>
+		<title> Home Page </title>
+	</head>
+	<body>
+		<h1> Disaster Tweet? <h2>
+
+	<!-- Input for passing a single tweet to the ML model  -->
+	<form action="{{url_for('predict')}}" method="post">
+		<input type="text" name="tweetString" placeholder="" required="required">
+		<button type="submit"> Is Disaster Tweet? </button>
+	</form>
+
+	<p> Tweet = {{ inputTweet }} </p> 
+	<p> Result = {{ predictionText }} </p>
+
+	</body>
+</html>
+
+
+

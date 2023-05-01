@@ -1,0 +1,7 @@
+
+#
+IMAGE_NAME=dtweets_fastapi
+CONT_PORT=8000
+HOST_PORT=127.0.0.1:5000
+
+docker run -p ${HOST_PORT}:${CONT_PORT} ${IMAGE_NAME}
